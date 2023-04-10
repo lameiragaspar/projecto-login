@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(var(--verde), var(--degrade-2) );
+    }
+
+    section.login{
+        width: 90vw;
+    }
+    section.login > div.imagem{
+        background-position: left center;
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section.login > div.formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+/*Computadores*/
+
+@media screen and (min-width:992px){
+    body{
+        background-image: linear-gradient(var(--verde), var(--degrade-2) );
+    }
+
+    section.login{
+        width: 990px ;
+    }
+
+    section.login > div.imagem{
+        background-position: right center;
+        float: right;
+        width: 50%;
+        height: 100%;
+
+    }
+    section.login > div.formulario{
+        float: left;
+        width: 50%;
+    }
+}
