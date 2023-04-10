@@ -1,1 +1,59 @@
 @charset "UTF-8";
+
+:root{
+    --castanho:#734F4F;
+    --verde:#4D736F;
+    --branco:#ffffff;
+    --preto:#000000;
+    --degrade:#382636;
+    --degrade-2:#876D6C;
+    --estra:#DAE2ED;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--degrade-2);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section.login{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) ;
+
+    width: 250px;
+    height: 500px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+}
+
+section.login > div.imagem{
+    display: block;
+    background: var(--degrade-2) url(../imagens/entrada.jpg) top center no-repeat;
+    background-size: cover;
+    height: 200px;
+    /*border-radius: 15px 15px 0px 0px; ou...em cima, overflow:hidden*/
+}
+
+section.login > div.formulario{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
