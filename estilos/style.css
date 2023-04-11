@@ -70,15 +70,23 @@ div.formulario > p{
 form > div.campo_login{
     display: block;
     background-color: var(--castanho);
+    border: 2px solid var(--castanho);
     width: 90%;
-    height: 30px;
+    height: 35px;
     margin: auto;
     border-radius: 5px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
+
+
 form > div.campo_login > span{
-    padding:5px 0px 0px;
+    color: var(--branco);
+    font-size: 1.9em;
+    width: 40px;
+    float: left;
+    
 }
 
 form label{
@@ -86,8 +94,19 @@ form label{
 }
 
 form > div.campo_login > input{
-    width: 80%;
+    width: calc(100% - 40px);
+    float: right;
+    background-color: var(--estra);
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    
 } 
+
+div.campo_login > input:focus-within{
+    background-color: var(--branco);
+}
 
 form > input[type=submit]{
     display: block;
